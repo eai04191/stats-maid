@@ -14,7 +14,7 @@ class Webhook:
         if("avatar_url" in kwarg):
             avatar_url = kwarg["avatar_url"]
         else:
-            avatar_url = "https://img.crypko.ai/daisy/d884e6585012ba9cbf2397af28bde2f2644debee_lg.jpg"
+            avatar_url = "https://i.imgur.com/RDgVKwJ.jpg"
 
         if("content" in kwarg):
             content = kwarg["content"]
