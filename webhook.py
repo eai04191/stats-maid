@@ -1,10 +1,10 @@
 import requests
 import json
-
+import env
 
 class Webhook:
     def send_message(self, **kwarg):
-        url = "https://discordapp.com/api/webhooks/434019939096068096/eNAQClgsy55tU38fgDbe0OIpMXzz8Ty6Fni4lUyHNG5RgCOssjItiv2yLxyTWTCdfRIS"
+        url = env.discord_webhook_url
 
         if("username" in kwarg):
             username = kwarg.pop("username")
