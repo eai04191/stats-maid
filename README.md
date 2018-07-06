@@ -9,7 +9,7 @@ She loves stats, and you too.
 ![Screenshot](https://pbs.twimg.com/media/DhUu3gCVQAAmdEm.jpg)
 
 * Collect daily statistics
-* Send Stats Discord.
+* Send statistics to Discord.
 
 ### Other features that are planned
 
