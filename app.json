@@ -1,0 +1,15 @@
+{
+    "name": "Stats Maid",
+    "description": "Your maid who loves statistics.",
+    "website": "https://github.com/eai04191/stats-maid",
+    "repository": "https://github.com/eai04191/stats-maid",
+    "logo": "",
+    "success_url": "",
+    "scripts": {},
+    "env": {},
+    "formation": {},
+    "image": "",
+    "addons": [],
+    "buildpacks": [{}],
+    "environments": {}
+}
