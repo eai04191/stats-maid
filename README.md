@@ -4,14 +4,30 @@ Stats Maid
 She loves stats, and you too.
 
 
+## Feature
+
+![Screenshot](https://pbs.twimg.com/media/DhUu3gCVQAAmdEm.jpg)
+
+* Collect daily statistics
+* Send Stats Discord.
+
+### Other features that are planned
+
+* Slack support.
+* Customizable Stats and Formats.
+
+
 ## Usage
 
-`Now Printing.`
+Now Printing.
 
 
 ## Supported Services and Variables
 
 ### Twitter
+
+<details>
+  <summary>Valiables</summary>
 
 * `int` followers
 * `int` following
@@ -21,9 +37,14 @@ She loves stats, and you too.
 * `str` screen_name
 * `int` tweets
 
+</details>
+
 ### Mastodon (Deprecated)
 
 Scraping can not acquire detailed numbers. (1000 or more will be displayed as 1K)
+
+<details>
+  <summary>Valiables</summary>
 
 *  `int` followers
 *  `int` following
@@ -31,7 +52,12 @@ Scraping can not acquire detailed numbers. (1000 or more will be displayed as 1K
 *  `int` toots
 *  `str` username
 
+</details>
+
 ### GitHub
+
+<details>
+  <summary>Valiables</summary>
 
 *  `int` contributions_in_last_year
 *  `int` followers
@@ -40,7 +66,12 @@ Scraping can not acquire detailed numbers. (1000 or more will be displayed as 1K
 *  `int` stars
 *  `str` username
 
+</details>
+
 ### Steam
+
+<details>
+  <summary>Valiables</summary>
 
 *  `int` artwork
 *  `int` badges
@@ -58,7 +89,12 @@ Scraping can not acquire detailed numbers. (1000 or more will be displayed as 1K
 *  `int` workshop_items
 *  `int` xp
 
+</details>
+
 ### osu!
+
+<details>
+  <summary>Valiables</summary>
 
 *  `str` country
 *  `int` id
@@ -94,7 +130,23 @@ Scraping can not acquire detailed numbers. (1000 or more will be displayed as 1K
     * `int` total_score
 *  `int` username
 
+</details>
+
+
+## Contribution
+
+Are you interested in contributing to this project? It's Awesome!
+
+An issue, pull request, others are always welcome!
+
+I'm just started using Python, it may take a while to understand your code. But I will do my utmost to improve this project!
+
 
 ## License
 
 This project is licensed under the MIT License.
+
+
+## Author
+
+[Eai](https://github.com/eai04191)
