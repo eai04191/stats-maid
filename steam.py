@@ -37,10 +37,13 @@ class Steam:
 
         comments = dom.get_element_by_id(
             "commentthread_Profile_%d_0_totalcount" % id).text
+        comments = comments.replace(",", "")
 
         counters = []
         for counter in dom.xpath("//*[@class=\"profile_count_link_total\"]"):
-            counters.append(counter.text.strip())
+            text = counter.text.strip()
+            text = text.replace(",", "")
+            counters.append(text)
 
         return {
             "id": id,

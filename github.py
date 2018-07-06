@@ -14,12 +14,14 @@ class Github:
 
         counters = []
         for counter in dom.xpath("//*[@class=\"Counter\"]"):
-            counters.append(counter.text.strip())
+            text = counter.text.strip()
+            text = text.replace(",", "")
+            counters.append(text)
 
         contributions_in_last_year = dom.xpath(
             "//*[@class=\"js-contribution-graph\"]/h2")[0].text.strip()
         contributions_in_last_year = re.search(
-            "(^\\d+)", contributions_in_last_year).group(0)
+            "(^\\d+(\\.\\d|))", contributions_in_last_year).group(0)
 
         return {
             "username": username,

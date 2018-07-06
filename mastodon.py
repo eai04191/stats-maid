@@ -14,7 +14,10 @@ class Mastodon:
 
         counters = []
         for counter in dom.xpath("//*[@class=\"counter-number\"]"):
-            counters.append(counter.text)
+            text = counter.text.strip()
+            text = text.replace("K", "000")
+            text = text.replace(",", "")
+            counters.append(text)
 
         return {
             "instance": instance,
