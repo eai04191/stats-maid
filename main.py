@@ -5,10 +5,22 @@ import mastodon
 import github
 import steam
 import osu
+import env
 
 
-def pjson(dic):
+def pint_json(dic):
     print(json.dumps(dic, ensure_ascii=False, indent=4, sort_keys=True))
+
+
+def debug_embed(dic):
+    return {
+        "fields": [
+            {
+                "name": "Debug Output",
+                "value": "```\r%s\r```" % json.dumps(dic, ensure_ascii=False, indent=4, sort_keys=True)
+            }
+        ]
+    }
 
 
 twitter = twitter.Twitter().get(screen_name="eai04191")
@@ -157,17 +169,30 @@ osu_embed = {
     ]
 }
 
-webhook = webhook.Webhook()
-
 embeds = []
-embeds.append(twitter_embed)
-embeds.append(mastodon_embed)
-embeds.append(github_embed)
-embeds.append(steam_embed)
-embeds.append(osu_embed)
+if(twitter_embed):
+    embeds.append(twitter_embed)
+    if(env.debug):
+        embeds.append(debug_embed(twitter))
+if(mastodon_embed):
+    embeds.append(mastodon_embed)
+    if(env.debug):
+        embeds.append(debug_embed(mastodon))
+if(github_embed):
+    embeds.append(github_embed)
+    if(env.debug):
+        embeds.append(debug_embed(github))
+if(steam_embed):
+    embeds.append(steam_embed)
+    if(env.debug):
+        embeds.append(debug_embed(steam))
+if(osu_embed):
+    embeds.append(osu_embed)
+    if(env.debug):
+        embeds.append(debug_embed(osu))
 
 
-success = webhook.send_message(
+success = webhook.Webhook().send_message(
     embeds=embeds
 )
 
