@@ -1,0 +1,83 @@
+{
+    "twitter": {
+        "followers": 998,
+        "following": 455,
+        "id": 873775722,
+        "likes": 51852,
+        "listed": 46,
+        "screen_name": "eai04191",
+        "tweets": 127515
+    },
+    "mastodon": {
+        "followers": 31,
+        "following": 8,
+        "instance": "mstdn.io",
+        "toots": 56,
+        "username": "Eai"
+    },
+    "github": {
+        "contributions_in_last_year": 411,
+        "followers": 18,
+        "following": 7,
+        "public_repositories": 31,
+        "stars": 135,
+        "username": "eai04191"
+    },
+    "steam": {
+        "artwork": 5,
+        "badges": 231,
+        "comments": 115,
+        "friends": 107,
+        "games": 795,
+        "groups": 25,
+        "guides": 6,
+        "id": 76561198040100825,
+        "level": 84,
+        "name": "Eai",
+        "recent_playtime": 168.7,
+        "reviews": 37,
+        "screenshots": 120,
+        "workshop_items": 3,
+        "xp": 40008
+    },
+    "osu": {
+        "country": "JP",
+        "id": 1584443,
+        "statistics": {
+            "grade_counts": {
+                "a": 566,
+                "s": 319,
+                "sh": 92,
+                "ss": 57,
+                "ssh": 31
+            },
+            "hit_accuracy": 97.1798,
+            "level": {
+                "current": 93,
+                "progress": 46
+            },
+            "maximum_combo": 1367,
+            "play_count": 10133,
+            "play_time": 649600,
+            "play_time_str": "180 hrs 26 mins 40 secs",
+            "pp": 1377.36,
+            "pp_rank": 177308,
+            "rank": {
+                "country": 9483,
+                "global": 177308
+            },
+            "ranked_score": 2320072085,
+            "replays_watched_by_others": 6,
+            "scoreRanks": {
+                "A": 566,
+                "S": 319,
+                "SH": 92,
+                "X": 57,
+                "XH": 31
+            },
+            "total_hits": 1537865,
+            "total_score": 5855543325
+        },
+        "username": "Eai"
+    }
+}
